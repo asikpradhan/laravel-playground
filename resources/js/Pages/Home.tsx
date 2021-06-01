@@ -1,6 +1,7 @@
 import React from "react";
 import {Card} from "../component/Card";
-
+import {Alert} from "rivet-react";
+import 'rivet-uits/css/rivet.min.css'
 const Home = () => {
     let foo: string = "React";
     const bar: string = "TypeScript";
@@ -15,7 +16,7 @@ const Home = () => {
                     This is card header
                 </h3>
                 <p>
-                    This is section body
+                    <Alert variant="success">Success!</Alert>
                 </p>
             </Card>
         </section>

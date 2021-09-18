@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
     <link href="{{ config('app.base') . mix('/css/app.css') }}" rel="stylesheet"/>
     <script src="{{ config('app.base') . mix('/js/app.js') }}" defer></script>
+    <title>Playground</title>
 </head>
 <body>
 @inertia

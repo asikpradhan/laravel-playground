@@ -39174,7 +39174,8 @@ var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/r
 var Card_1 = __webpack_require__(/*! ../component/Card */ "./resources/js/component/Card.tsx");
 var rivet_react_1 = __webpack_require__(/*! rivet-react */ "./node_modules/rivet-react/build/dist/components/index.js");
 __webpack_require__(/*! rivet-uits/css/rivet.min.css */ "./node_modules/rivet-uits/css/rivet.min.css");
-var Home = function () {
+var Home = function (_a) {
+    var blah = _a.blah;
     var foo = "React";
     var bar = "TypeScript";
     return (react_1.default.createElement("section", { className: "section-home" },
@@ -39182,7 +39183,9 @@ var Home = function () {
             "yo yo Hello ",
             foo,
             " + ",
-            bar),
+            bar,
+            " + ",
+            blah),
         react_1.default.createElement(Card_1.Card, null,
             react_1.default.createElement("h3", null, "This is card header"),
             react_1.default.createElement("p", null,

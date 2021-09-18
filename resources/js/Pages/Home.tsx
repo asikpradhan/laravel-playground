@@ -2,14 +2,15 @@ import React from "react";
 import {Card} from "../component/Card";
 import {Alert} from "rivet-react";
 import 'rivet-uits/css/rivet.min.css'
-const Home = () => {
+
+const Home: React.FC<HomeProps> = ({blah}) => {
     let foo: string = "React";
     const bar: string = "TypeScript";
 
     return (
         <section className="section-home">
             <h1>
-                yo yo Hello {foo} + {bar}
+                yo yo Hello {foo} + {bar} + {blah}
             </h1>
             <Card>
                 <h3>
@@ -22,5 +23,9 @@ const Home = () => {
         </section>
     );
 };
+
+export interface HomeProps {
+    blah: string;
+}
 
 export default Home;

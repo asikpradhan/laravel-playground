@@ -17,3 +17,6 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+Route::get('/blogs', function () {
+    return Http::get('https://blogs.iu.edu/bfca/wp-json/wp/v2/posts?per_page=4')->json();
+});

@@ -22,5 +22,5 @@ Route::get('/blogs', function () {
     return Http::get('https://blogs.iu.edu/bfca/wp-json/wp/v2/posts?per_page=4')->json();
 });
 Route::get('/what', function () {
-    return Http::get('https://blogs.iu.edu/bfca/wp-json/wp/v2/posts?per_page=4')->json();
+    return 'test test';
 });
